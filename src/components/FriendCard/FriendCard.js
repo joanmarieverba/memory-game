@@ -6,8 +6,10 @@ const FriendCard = props => (
         <div className="img-container">
             <img alt={props.name} src={props.image} />
         </div>
-
-    </div>
+    </div> 
+    // <button class="btn1" value="0">
+    //     <img alt={props.name} src={props.image} />
+    // </button>
 );
 
 export default FriendCard;

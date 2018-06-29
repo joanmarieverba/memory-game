@@ -7,7 +7,7 @@
   {
     "id": 2,
     "name": "Wondry",
-    "image": "http://ftlpublications.com/images/Wondry-front-cover-seal.jpg"
+    "image": "http://ftlpublications.com/images/wondry-front-cover-seal.jpg"
   },
   {
     "id": 3,
@@ -48,15 +48,6 @@
     "id": 10,
     "name": "Flowers",
     "image": "http://ftlpublications.com/images/flowers--front-cover.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Scheduler",
-    "image": "http://ftlpublications.com/images/flexible-scheduler-front.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Animals",
-    "image": "http://ftlpublications.com/images/animals-front-cover.jpg"
   }
+
 ]
