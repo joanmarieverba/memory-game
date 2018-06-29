@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import FriendCard from "./FriendCard";
+import React from "react";
 import Wrapper from "./Wrapper";
 import friends from "./friends.json";
 
@@ -24,25 +23,25 @@ const imgStyle = {
     margin: "10px 20px 10px 20px",
 }
 
-
-
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
 
     state = {
             // Setting the initial state of the Counter component
         count: 0,
+            // Setting the initial state of You Guessed correctly
+        guessedCorrectly: "",
             // Setting this.state.friends to the friends json array
         friends
     };
-
-
 
 
     // handleIncrement increases this.state.count by 1
     handleIncrement = () => {
         // We always use the setState method to update a component's state
         this.setState({ count: this.state.count + 1 });
+        this.setState({ guessedCorrectly: "You Guessed Correctly"});
+        console.log("count ", this.state.count);
     };
 
     // handleDecrement decreases this.state.count by 1
@@ -73,7 +72,7 @@ class Counter extends React.Component {
                     <nav>
                         <ul style={line}>
                             <li style={line}>Memory Game</li>
-                            <li style={line}>You guessed correctly</li>
+                            <li style={line}>{this.state.guessedCorrectly}</li>
                             <li style={line}>Score: {this.state.count}</li>
                             <li style={line}>Top Score: {this.state.count}</li>
                         </ul>
@@ -82,7 +81,7 @@ class Counter extends React.Component {
              
                 {this.state.friends.map(friend => (
 
-                    <img style={imgStyle} alt={friend.name} src={friend.image} />
+                    <button key={friend.id} onClick={this.handleIecrement}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
       
                 ))}
             </Wrapper>
