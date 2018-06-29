@@ -18,6 +18,12 @@ const line = {
     listStyleType: "none",
 }
 
+const imgStyle = {
+    height: "150px",
+    width: "150px",
+    margin: "10px 20px 10px 20px",
+}
+
 
 
 // By extending the React.Component class, Counter inherits functionality from it
@@ -75,13 +81,9 @@ class Counter extends React.Component {
                 </header>
              
                 {this.state.friends.map(friend => (
-                    <FriendCard>
-                        removeFriend={this.removeFriend}
-                        id={friend.id}
-                        key={friend.id}
-                        name={friend.name}
-                        image={friend.image}
-                    </FriendCard>
+
+                    <img style={imgStyle} alt={friend.name} src={friend.image} />
+      
                 ))}
             </Wrapper>
         );

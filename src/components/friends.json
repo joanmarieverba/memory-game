@@ -48,6 +48,16 @@
     "id": 10,
     "name": "Flowers",
     "image": "http://ftlpublications.com/images/flowers--front-cover.jpg"
+  },
+  {
+      "id": 11,
+      "name": "Baby Animals",
+      "image": "http://ftlpublications.com/images/baby-animals-front-cover.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Animals",
+    "image": "http://ftlpublications.com/images/animals-front-cover.jpg"
   }
 
 ]
