@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Voyager",
+    "image": "http://ftlpublications.com/images/voyager-front-kindle.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Wondry",
+    "image": "http://ftlpublications.com/images/Wondry-front-cover-seal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Travel",
+    "image": "http://ftlpublications.com/images/travel-journal-front-cover.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Butterflies",
+    "image": "http://ftlpublications.com/images/butterflies--front-cover.jpg"
+  },
+  {
+    "id": 5,
+    "name": "More",
+    "image": "http://ftlpublications.com/images/more-darling-animals-front-cover.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Modern",
+    "image": "http://ftlpublications.com/images/modern-surprises-desktop-blurb.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Budget",
+    "image": "http://ftlpublications.com/images/journal-budget-front.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Cookbook",
+    "image": "http://ftlpublications.com/images/journal-blank-ckbk-front.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Anytime",
+    "image": "http://ftlpublications.com/images/journal-anytime-front-cover.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Flowers",
+    "image": "http://ftlpublications.com/images/flowers--front-cover.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Scheduler",
+    "image": "http://ftlpublications.com/images/flexible-scheduler-front.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Animals",
+    "image": "http://ftlpublications.com/images/animals-front-cover.jpg"
+  }
+]
