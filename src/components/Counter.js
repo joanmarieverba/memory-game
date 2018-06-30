@@ -81,7 +81,7 @@ class Counter extends React.Component {
              
                 {this.state.friends.map(friend => (
 
-                    <button key={friend.id} onClick={this.handleIncrement.bind(this)}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
+                    <button key={friend.id} onClick={this.handleIncrement}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
       
                 ))}
             </Wrapper>
