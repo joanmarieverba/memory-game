@@ -27,9 +27,10 @@ const imgStyle = {
 class Counter extends React.Component {
 
     state = {
-            // Setting the initial state of the Counter component
+            // Setting the initial state of the counter and top score
         count: 0,
-            // Setting the initial state of You Guessed correctly
+        topScore: 0,
+            // Setting the initial state of You Guessed Correctly
         guessedCorrectly: "",
             // Setting this.state.friends to the friends json array
         friends: friends
@@ -38,11 +39,12 @@ class Counter extends React.Component {
 
     // handleIncrement 
     handleIncrement = (id) => {
-        const friends = [...this.state.friends];
+   
         if (friends[id - 1].clicked === false) {
-        
+
             friends[id - 1].clicked = true;
-            // same as below
+
+            // 
             // this.setState({ count: this.state.count + 1 });
             // this.setState({ guessedCorrectly: "You Guessed Correctly" });
             // this.setState({ friends });
@@ -51,12 +53,16 @@ class Counter extends React.Component {
                 guessedCorrectly: "You Guessed Correctly",
                 friends
               }));
+      
+            if (this.state.count >= this.state.topScore) {
+                this.setState({ topScore: this.state.count + 1});
+            }
         } else {
     
             friends.forEach ((friend) => {
                 friend.clicked = false;
             })
-            this.setState({ count: 0, guessedCorrectly: "You Guessed Incorrectly", friends });
+            this.setState({ count: 0, guessedCorrectly: "Incorrect, game reset", friends });
 
         }
        this.shuffleImages();
@@ -72,20 +78,6 @@ class Counter extends React.Component {
         this.setState({ count: this.state.count - 1 });
     };
 
-    // The render method returns the JSX that should be rendered
-    //render() {
-        // return (
-        //     <div className="card text-center">
-        //         <div className="card-header bg-primary text-white">
-        //             <h3 className="card-title"> Click Counter!</h3>
-        //         </div>
-        //         <div className="card-body">
-        //             <p className="card-text">Click Count: {this.state.count}</p>
-        //             <button className="btn btn-primary" onClick={this.handleIncrement}>Increment</button>{" "}
-        //             <button className="btn btn-danger" onClick={this.handleDecrement}>Decrement</button>
-        //         </div>
-        //     </div>
-        // )
 
     render() {
         return (
@@ -96,7 +88,7 @@ class Counter extends React.Component {
                             <li style={line}>Memory Game</li>
                             <li style={line}>{this.state.guessedCorrectly}</li>
                             <li style={line}>Score: {this.state.count}</li>
-                            <li style={line}>Top Score: {this.state.count}</li>
+                            <li style={line}>Top Score: {this.state.topScore}</li>
                         </ul>
                     </nav>
                 </header>
