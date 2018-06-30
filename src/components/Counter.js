@@ -36,17 +36,30 @@ class Counter extends React.Component {
     };
 
 
-    // handleIncrement increases this.state.count by 1
+    // handleIncrement 
     handleIncrement = (id) => {
-        // We always use the setState method to update a component's state
-        this.setState({ count: this.state.count + 1 });
-        this.setState({ guessedCorrectly: "You Guessed Correctly"});
-        console.log("count ", this.state.count);
-        console.log("id", id);
-        const friends = this.state.friends[id-1];
-            this.setState
-        console.log("friends", friends);
-        this.shuffleImages();
+        const friends = [...this.state.friends];
+        if (friends[id - 1].clicked === false) {
+        
+            friends[id - 1].clicked = true;
+            // same as below
+            // this.setState({ count: this.state.count + 1 });
+            // this.setState({ guessedCorrectly: "You Guessed Correctly" });
+            // this.setState({ friends });
+              this.setState(prevState => ({
+                count: prevState.count + 1,
+                guessedCorrectly: "You Guessed Correctly",
+                friends
+              }));
+        } else {
+    
+            friends.forEach ((friend) => {
+                friend.clicked = false;
+            })
+            this.setState({ count: 0, guessedCorrectly: "You Guessed Incorrectly", friends });
+
+        }
+       this.shuffleImages();
     };
 
     shuffleImages = () => {
