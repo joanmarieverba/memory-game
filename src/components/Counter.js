@@ -32,16 +32,25 @@ class Counter extends React.Component {
             // Setting the initial state of You Guessed correctly
         guessedCorrectly: "",
             // Setting this.state.friends to the friends json array
-        friends
+        friends: friends
     };
 
 
     // handleIncrement increases this.state.count by 1
-    handleIncrement = () => {
+    handleIncrement = (id) => {
         // We always use the setState method to update a component's state
         this.setState({ count: this.state.count + 1 });
         this.setState({ guessedCorrectly: "You Guessed Correctly"});
         console.log("count ", this.state.count);
+        console.log("id", id);
+        const friends = this.state.friends[id-1];
+            this.setState
+        console.log("friends", friends);
+        this.shuffleImages();
+    };
+
+    shuffleImages = () => {
+        this.setState(  { friends: friends.sort((a,b)=> 0.5 - Math.random())})
     };
 
     // handleDecrement decreases this.state.count by 1
@@ -81,7 +90,7 @@ class Counter extends React.Component {
              
                 {this.state.friends.map(friend => (
 
-                    <button key={friend.id} onClick={this.handleIncrement}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
+                    <button key={friend.id} onClick={()=>this.handleIncrement(friend.id)}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
       
                 ))}
             </Wrapper>

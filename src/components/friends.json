@@ -2,62 +2,74 @@
   {
     "id": 1,
     "name": "Voyager",
-    "image": "http://ftlpublications.com/images/voyager-front-kindle.jpg"
+    "image": "http://ftlpublications.com/images/voyager-front-kindle.jpg",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "Wondry",
-    "image": "http://ftlpublications.com/images/wondry-front-cover-seal.jpg"
+    "image": "http://ftlpublications.com/images/wondry-front-cover-seal.jpg",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Travel",
-    "image": "http://ftlpublications.com/images/travel-journal-front-cover.jpg"
+    "image": "http://ftlpublications.com/images/travel-journal-front-cover.jpg",
+      "clicked": false
   },
   {
     "id": 4,
     "name": "Butterflies",
-    "image": "http://ftlpublications.com/images/butterflies--front-cover.jpg"
+    "image": "http://ftlpublications.com/images/butterflies--front-cover.jpg",
+      "clicked": false
   },
   {
     "id": 5,
     "name": "More",
-    "image": "http://ftlpublications.com/images/more-darling-animals-front-cover.jpg"
+    "image": "http://ftlpublications.com/images/more-darling-animals-front-cover.jpg",
+      "clicked": false
   },
   {
     "id": 6,
     "name": "Modern",
-    "image": "http://ftlpublications.com/images/modern-surprises-desktop-blurb.jpg"
+    "image": "http://ftlpublications.com/images/modern-surprises-desktop-blurb.jpg",
+      "clicked": false
   },
   {
     "id": 7,
     "name": "Budget",
-    "image": "http://ftlpublications.com/images/journal-budget-front.jpg"
+    "image": "http://ftlpublications.com/images/journal-budget-front.jpg",
+      "clicked": false
   },
   {
     "id": 8,
     "name": "Cookbook",
-    "image": "http://ftlpublications.com/images/journal-blank-ckbk-front.jpg"
+    "image": "http://ftlpublications.com/images/journal-blank-ckbk-front.jpg",
+      "clicked": false
   },
   {
     "id": 9,
     "name": "Anytime",
-    "image": "http://ftlpublications.com/images/journal-anytime-front-cover.jpg"
+    "image": "http://ftlpublications.com/images/journal-anytime-front-cover.jpg",
+      "clicked": false
   },
   {
     "id": 10,
     "name": "Flowers",
-    "image": "http://ftlpublications.com/images/flowers--front-cover.jpg"
+    "image": "http://ftlpublications.com/images/flowers--front-cover.jpg",
+      "clicked": false
   },
   {
       "id": 11,
       "name": "Baby Animals",
-      "image": "http://ftlpublications.com/images/baby-animals-front-cover.jpg"
+      "image": "http://ftlpublications.com/images/baby-animals-front-cover.jpg",
+        "clicked": false
   },
   {
     "id": 12,
     "name": "Animals",
-    "image": "http://ftlpublications.com/images/animals-front-cover.jpg"
+    "image": "http://ftlpublications.com/images/animals-front-cover.jpg",
+      "clicked": false
   }
 
 ]
