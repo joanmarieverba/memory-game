@@ -38,12 +38,10 @@ class Counter extends React.Component {
 
 
     // handleIncrement 
-    handleIncrement = (id) => {
-   
-        if (friends[id - 1].clicked === false) {
-
-            friends[id - 1].clicked = true;
-
+    handleIncrement = (index) => {
+ 
+        if (this.state.friends[index].clicked === false) {
+            friends[index].clicked = true;
             // 
             // this.setState({ count: this.state.count + 1 });
             // this.setState({ guessedCorrectly: "You Guessed Correctly" });
@@ -93,9 +91,9 @@ class Counter extends React.Component {
                     </nav>
                 </header>
              
-                {this.state.friends.map(friend => (
+                {this.state.friends.map((friend, index) => (
 
-                    <button key={friend.id} onClick={()=>this.handleIncrement(friend.id)}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
+                    <button key={friend.id} onClick={()=>this.handleIncrement(index)}><img style={imgStyle} alt={friend.name} src={friend.image} /></button>
       
                 ))}
             </Wrapper>
